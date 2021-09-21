@@ -7,11 +7,7 @@ them again to enter a weight.
 
 """
 
-
-while True:
-    weight =eval(input("Enter Weight in Kg: "))
-    if weight < 0:
-        print("Illegal weight entered")
-    else:
-        pounds = weight * 2.2
-        print("Your weight in Pounds is",pounds)
+weight = int(input(' Enter weight in Kg : '))
+while weight <= 0:
+    weight = eval(input('impossible. enter a new weight: '))
+print(f' you weight in pounds is {weight /0.45} lb')
